@@ -27,7 +27,7 @@ def math_operation():
             result = 'the quotient when ' + str(num1) + ' is divided by ' + str(num2) + ' is ' + str(r)
         return render_template('results.html',result=result)
 
-@app.route('/via_postman', methods=['POST']) # for calling the API from Postman/SOAPUI
+@app.route('/via_postman', methods=['POST']) # for calling the API from Postman
 def math_operation_via_postman():
     if (request.method=='POST'):
         operation=request.json['operation']
