@@ -1,0 +1,5 @@
+conteiner:
+  image: saidrandom50/calculator
+  tag : latest
+
+replicaCount: 2
